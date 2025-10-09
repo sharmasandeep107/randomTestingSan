@@ -66,6 +66,8 @@ sqlOrchestratorPipelines:
     description: null
     author: sharma.sandeep@prophecy.io
     files:
+    - models/p1/schema.yml
+    - models/p1/p1__constant_value_query.sql
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-10-09 11:31:05'

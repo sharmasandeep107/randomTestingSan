@@ -27,7 +27,32 @@
     "isTranspiledPipeline" : false,
     "publishDiagnosticMetrics" : false
   },
-  "processes" : { },
+  "processes" : {
+    "hgX-6TmSL6SlZRNtzNl2B$$NBUUsAWpcZoXpR47JDL92" : {
+      "id" : "hgX-6TmSL6SlZRNtzNl2B$$NBUUsAWpcZoXpR47JDL92",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "p1__constant_value_query",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "p1__constant_value_query"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "constant_value_query_y8wHXUYppwfBlzPdjvvvL$$rJOiuPWBIfksZHTNKp_Gu", "hgX-6TmSL6SlZRNtzNl2B$$NBUUsAWpcZoXpR47JDL92" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "p1__constant_value_query_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

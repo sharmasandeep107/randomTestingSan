@@ -27,7 +27,34 @@
     "isTranspiledPipeline" : false,
     "publishDiagnosticMetrics" : false
   },
-  "processes" : { },
+  "processes" : {
+    "hgX-6TmSL6SlZRNtzNl2B$$NBUUsAWpcZoXpR47JDL92" : {
+      "id" : "hgX-6TmSL6SlZRNtzNl2B$$NBUUsAWpcZoXpR47JDL92",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "constant_value_query",
+        "x" : -420,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "select 1 as f1"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "y8wHXUYppwfBlzPdjvvvL$$rJOiuPWBIfksZHTNKp_Gu",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
   "connections" : [ ],
   "component" : "Pipeline"
 }

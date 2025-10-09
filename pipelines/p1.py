@@ -2,4 +2,8 @@ Schedule = Schedule(cron = "* 0 2 * * * *", timezone = "GMT", emails = ["email@g
 SensorSchedule = SensorSchedule(enabled = False)
 
 with DAG(Schedule = Schedule, SensorSchedule = SensorSchedule):
-    pass
+    p1__constant_value_query = Task(
+        task_id = "p1__constant_value_query", 
+        component = "Model", 
+        modelName = "p1__constant_value_query"
+    )
