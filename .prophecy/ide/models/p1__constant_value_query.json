@@ -37,12 +37,12 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "input_port_EvkSMUOB",
-          "slug" : "input_port_zhfUCg2f"
+          "id" : "input_port_mnw9Btby",
+          "slug" : "input_port_zKGl7ahi"
         } ],
         "outputs" : [ {
-          "id" : "output_port_AkJuaOSD",
-          "slug" : "output_port_SLjnzUlG"
+          "id" : "output_port_AjR4vczB",
+          "slug" : "output_port_Mir5x1pg"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -77,11 +77,11 @@
     }
   },
   "connections" : [ {
-    "id" : "conn_EfHZTmfVsvbHoSuxelarV$$yf2fl042cicm0YA6uw7YV_constant_value_query_f4pAssG2nkzjfangAJO3M$$C1uVFjc1vKxMFaCvi0AaW_nvpHmV6y",
+    "id" : "conn_EfHZTmfVsvbHoSuxelarV$$yf2fl042cicm0YA6uw7YV_constant_value_query_f4pAssG2nkzjfangAJO3M$$C1uVFjc1vKxMFaCvi0AaW_PntBwRju",
     "source" : "EfHZTmfVsvbHoSuxelarV$$yf2fl042cicm0YA6uw7YV",
     "sourcePort" : "f4pAssG2nkzjfangAJO3M$$C1uVFjc1vKxMFaCvi0AaW",
     "target" : "constant_value_query_f4pAssG2nkzjfangAJO3M$$C1uVFjc1vKxMFaCvi0AaW",
-    "targetPort" : "input_port_EvkSMUOB"
+    "targetPort" : "input_port_mnw9Btby"
   } ],
   "component" : "Model"
 }
