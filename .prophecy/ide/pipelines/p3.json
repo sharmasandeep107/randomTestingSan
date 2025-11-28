@@ -1,0 +1,67 @@
+{
+  "id" : "p3",
+  "metainfo" : {
+    "label" : "p3",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    },
+    "sensorSchedule" : {
+      "enabled" : false,
+      "isDefaultView" : false,
+      "triggers" : { }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "SQLStatement_0_JJEb5jaNvh1lg_1tXefKM$$ssNifONQdxN_pr04gHWc6" : "p3__SQLStatement_0",
+      "constant_selection_JJEb5jaNvh1lg_1tXefKM$$ssNifONQdxN_pr04gHWc6" : "p3__constant_selection",
+      "JF2hARPf0tXTsJuBEG3gc$$1axoynyNtMkjM_GAhUJjn" : "p3__constant_selection"
+    }
+  },
+  "processes" : {
+    "JF2hARPf0tXTsJuBEG3gc$$1axoynyNtMkjM_GAhUJjn" : {
+      "id" : "JF2hARPf0tXTsJuBEG3gc$$1axoynyNtMkjM_GAhUJjn",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "constant_selection",
+        "x" : -420,
+        "y" : -280,
+        "phase" : 0,
+        "comment" : "Generates a constant value for use in further analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "select 1 as f1"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "JJEb5jaNvh1lg_1tXefKM$$ssNifONQdxN_pr04gHWc6",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

@@ -90,4 +90,15 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-11-28 11:56:49'
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: sharma.sandeep@prophecy.io
+    files:
+    - models/p3/schema.yml
+    - models/p3/p3__constant_selection.sql
+    - .prophecy/ide/pipelines/p3.json
+    - pipelines/p3.py
+    createdAt: '2025-11-28 15:03:15'
 sqlBusinessApps: {}
