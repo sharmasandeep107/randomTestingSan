@@ -28,25 +28,25 @@
     "publishDiagnosticMetrics" : false
   },
   "processes" : {
-    "3ncB7YDX-NIEqtlnyeoJO$$383Oj4jYozHLFGkj1DY2Z" : {
-      "id" : "3ncB7YDX-NIEqtlnyeoJO$$383Oj4jYozHLFGkj1DY2Z",
+    "6ENlGxdJ_Exy90HOUuaB4$$yuY4AukBxFyz9DTCALdRJ" : {
+      "id" : "6ENlGxdJ_Exy90HOUuaB4$$yuY4AukBxFyz9DTCALdRJ",
       "component" : "Model",
       "metadata" : {
-        "label" : "p1__constant_value_query",
+        "label" : "p1__constant_selection",
         "phase" : 0
       },
       "properties" : {
-        "modelName" : "p1__constant_value_query"
+        "modelName" : "p1__constant_selection"
       },
       "visualMetaInfo" : {
-        "visualProcessIds" : [ "constant_value_query_mlXjdCFQY4KrPEI0IbMBU$$0YOX_tXbDofmKzvDW6n3N", "3ncB7YDX-NIEqtlnyeoJO$$383Oj4jYozHLFGkj1DY2Z", "6ENlGxdJ_Exy90HOUuaB4$$yuY4AukBxFyz9DTCALdRJ" ],
+        "visualProcessIds" : [ "constant_selection_zLajjMOjw4R20J-Euu-S3$$-1nuTmkQRvVO2MO97MjQq", "6ENlGxdJ_Exy90HOUuaB4$$yuY4AukBxFyz9DTCALdRJ" ],
         "type" : "ephemeral",
         "isTemporaryTable" : true
       },
       "ports" : {
         "inputs" : [ ],
         "outputs" : [ {
-          "id" : "p1__constant_value_query_out_0",
+          "id" : "p1__constant_selection_out_0",
           "slug" : "out_0"
         } ],
         "isCustomOutputSchema" : false

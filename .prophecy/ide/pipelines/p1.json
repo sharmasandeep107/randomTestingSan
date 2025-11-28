@@ -55,45 +55,8 @@
         } ],
         "isCustomOutputSchema" : false
       }
-    },
-    "3ncB7YDX-NIEqtlnyeoJO$$383Oj4jYozHLFGkj1DY2Z" : {
-      "id" : "3ncB7YDX-NIEqtlnyeoJO$$383Oj4jYozHLFGkj1DY2Z",
-      "component" : "SQLStatement",
-      "metadata" : {
-        "label" : "constant_value_query",
-        "x" : 0,
-        "y" : -220,
-        "phase" : 0,
-        "comment" : "Generates a constant value for use in further analysis.",
-        "autoUpdateComment" : true
-      },
-      "properties" : {
-        "fileTabs" : [ {
-          "path" : "out",
-          "id" : "out",
-          "language" : "sql",
-          "content" : "select 1 as f1"
-        } ]
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "RiHTn8SeljltBnp9sNI2d$$KKfjNaaRXMeZSjgLSfeIW",
-          "slug" : "constant_selection"
-        } ],
-        "outputs" : [ {
-          "id" : "mlXjdCFQY4KrPEI0IbMBU$$0YOX_tXbDofmKzvDW6n3N",
-          "slug" : "out"
-        } ],
-        "isCustomOutputSchema" : false
-      }
     }
   },
-  "connections" : [ {
-    "id" : "Px6HOgLt0oPCf9ZL_7tOi",
-    "source" : "6ENlGxdJ_Exy90HOUuaB4$$yuY4AukBxFyz9DTCALdRJ",
-    "sourcePort" : "zLajjMOjw4R20J-Euu-S3$$-1nuTmkQRvVO2MO97MjQq",
-    "target" : "3ncB7YDX-NIEqtlnyeoJO$$383Oj4jYozHLFGkj1DY2Z",
-    "targetPort" : "RiHTn8SeljltBnp9sNI2d$$KKfjNaaRXMeZSjgLSfeIW"
-  } ],
+  "connections" : [ ],
   "component" : "Pipeline"
 }
