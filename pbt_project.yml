@@ -75,7 +75,7 @@ sqlOrchestratorPipelines:
     author: sharma.sandeep@prophecy.io
     files:
     - models/p1/schema.yml
-    - models/p1/p1__constant_selection.sql
+    - models/p1/p1__constant_value_query.sql
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-11-28 11:56:49'
