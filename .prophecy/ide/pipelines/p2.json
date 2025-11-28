@@ -1,0 +1,62 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "schedule" : {
+      "cron" : "* 0 2 * * * *",
+      "timeZone" : "GMT",
+      "emailOnSuccess" : false,
+      "emailOnFailure" : false,
+      "emailOnStart" : false,
+      "emails" : [ "email@gmail.com" ],
+      "enabled" : false
+    },
+    "sensorSchedule" : {
+      "enabled" : false,
+      "isDefaultView" : false,
+      "triggers" : { }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false
+  },
+  "processes" : {
+    "P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r" : {
+      "id" : "P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "constant_selection",
+        "x" : -420,
+        "y" : -280,
+        "phase" : 0,
+        "comment" : "Generates a constant value for use in further analysis.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "select 1 as f1"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

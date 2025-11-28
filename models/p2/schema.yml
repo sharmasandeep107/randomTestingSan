@@ -1,0 +1,6 @@
+---
+version: 2
+models:
+- name: "p2__constant_selection"
+  tags:
+  - "prophecy_temp"
