@@ -1,7 +1,7 @@
 {
-  "id" : "p2__constant_selection",
+  "id" : "p2__fixed_value_query",
   "metainfo" : {
-    "label" : "p2__constant_selection",
+    "label" : "p2__fixed_value_query",
     "autoLayout" : true,
     "staleState" : "none",
     "sourceSuggestions" : {
@@ -18,17 +18,17 @@
     "version" : 3
   },
   "processes" : {
-    "constant_selection_2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz" : {
-      "id" : "constant_selection_2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz",
+    "fixed_value_query_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq" : {
+      "id" : "fixed_value_query_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq",
       "component" : "TargetModel",
       "metadata" : {
-        "label" : "constant_selection"
+        "label" : "fixed_value_query"
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
-        "query" : "\nSELECT *\n\nFROM constant_selection\n\n",
+        "query" : "\nSELECT *\n\nFROM fixed_value_query\n\n",
         "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
@@ -43,6 +43,36 @@
         "outputs" : [ {
           "id" : "output_port_0",
           "slug" : "output_port_0"
+        } ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      }
+    },
+    "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP" : {
+      "id" : "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "fixed_value_query",
+        "x" : -140,
+        "y" : -260,
+        "phase" : 0
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "select 2 as f2"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cWZAdeJX--YCn3apHmvdT$$JdmNjU5r6rKuB3kGuf4Sh",
+          "slug" : "constant_selection"
+        } ],
+        "outputs" : [ {
+          "id" : "J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq",
+          "slug" : "out"
         } ],
         "isCustomOutputSchema" : false,
         "autoUpdateOnRun" : false
@@ -77,11 +107,17 @@
     }
   },
   "connections" : [ {
-    "id" : "conn_P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r_2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz_constant_selection_2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz",
+    "id" : "conn_7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq_fixed_value_query_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq",
+    "source" : "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP",
+    "sourcePort" : "J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq",
+    "target" : "fixed_value_query_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq",
+    "targetPort" : "input_port_0"
+  }, {
+    "id" : "RAQs48Sg-JzXItLTfnuMT",
     "source" : "P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r",
     "sourcePort" : "2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz",
-    "target" : "constant_selection_2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz",
-    "targetPort" : "input_port_0"
+    "target" : "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP",
+    "targetPort" : "cWZAdeJX--YCn3apHmvdT$$JdmNjU5r6rKuB3kGuf4Sh"
   } ],
   "component" : "Model"
 }

@@ -25,7 +25,14 @@
       "triggers" : { }
     },
     "isTranspiledPipeline" : false,
-    "publishDiagnosticMetrics" : false
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP" : "p2__fixed_value_query",
+      "fixed_value_query_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq" : "p2__fixed_value_query",
+      "P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r" : "p2__fixed_value_query",
+      "SQLStatement_1_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq" : "p2__SQLStatement_1",
+      "constant_selection_2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz" : "p2__constant_selection"
+    }
   },
   "processes" : {
     "P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r" : {
@@ -55,8 +62,45 @@
         } ],
         "isCustomOutputSchema" : false
       }
+    },
+    "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP" : {
+      "id" : "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "fixed_value_query",
+        "x" : -140,
+        "y" : -260,
+        "phase" : 0,
+        "comment" : "Generates a constant value for use in reports or calculations.",
+        "autoUpdateComment" : true
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "select 2 as f2"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "cWZAdeJX--YCn3apHmvdT$$JdmNjU5r6rKuB3kGuf4Sh",
+          "slug" : "constant_selection"
+        } ],
+        "outputs" : [ {
+          "id" : "J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
     }
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "RAQs48Sg-JzXItLTfnuMT",
+    "source" : "P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r",
+    "sourcePort" : "2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz",
+    "target" : "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP",
+    "targetPort" : "cWZAdeJX--YCn3apHmvdT$$JdmNjU5r6rKuB3kGuf4Sh"
+  } ],
   "component" : "Pipeline"
 }

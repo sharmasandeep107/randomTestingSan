@@ -1,6 +1,6 @@
 ---
 version: 2
 models:
-- name: "p2__constant_selection"
+- name: "p2__fixed_value_query"
   tags:
   - "prophecy_temp"
