@@ -68,6 +68,17 @@ flags:
 pipelineConfigurations: {}
 projectConfigurations: {}
 sqlOrchestratorPipelines:
+  .prophecy/metadata/sqlorchestratorpipeline/p3:
+    name: p3
+    schema: null
+    description: null
+    author: sharma.sandeep@prophecy.io
+    files:
+    - models/p3/p3__constant_selection.sql
+    - models/p3/schema.yml
+    - .prophecy/ide/pipelines/p3.json
+    - pipelines/p3.py
+    createdAt: '2025-11-28 15:03:15'
   .prophecy/metadata/sqlorchestratorpipeline/p2:
     name: p2
     schema: null
@@ -79,6 +90,17 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p2.json
     - pipelines/p2.py
     createdAt: '2025-11-28 14:12:33'
+  .prophecy/metadata/sqlorchestratorpipeline/p4:
+    name: p4
+    schema: null
+    description: null
+    author: sharma.sandeep@prophecy.io
+    files:
+    - models/p4/p4__constant_value_f3.sql
+    - models/p4/schema.yml
+    - .prophecy/ide/pipelines/p4.json
+    - pipelines/p4.py
+    createdAt: '2025-12-01 07:21:27'
   .prophecy/metadata/sqlorchestratorpipeline/p1:
     name: p1
     schema: null
@@ -90,15 +112,4 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     createdAt: '2025-11-28 11:56:49'
-  .prophecy/metadata/sqlorchestratorpipeline/p3:
-    name: p3
-    schema: null
-    description: null
-    author: sharma.sandeep@prophecy.io
-    files:
-    - models/p3/schema.yml
-    - models/p3/p3__constant_selection.sql
-    - .prophecy/ide/pipelines/p3.json
-    - pipelines/p3.py
-    createdAt: '2025-11-28 15:03:15'
 sqlBusinessApps: {}

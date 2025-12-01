@@ -1,0 +1,6 @@
+---
+version: 2
+models:
+- name: "p4__constant_value_f3"
+  tags:
+  - "prophecy_temp"

@@ -27,8 +27,8 @@
     "isTranspiledPipeline" : false,
     "publishDiagnosticMetrics" : false,
     "processesVsModelFiles" : {
-      "constant_selection_zLajjMOjw4R20J-Euu-S3$$-1nuTmkQRvVO2MO97MjQq" : "p1__constant_selection",
-      "6ENlGxdJ_Exy90HOUuaB4$$yuY4AukBxFyz9DTCALdRJ" : "p1__constant_selection"
+      "6ENlGxdJ_Exy90HOUuaB4$$yuY4AukBxFyz9DTCALdRJ" : "models/p1/p1__constant_selection.sql",
+      "constant_selection_zLajjMOjw4R20J-Euu-S3$$-1nuTmkQRvVO2MO97MjQq" : "models/p1/p1__constant_selection.sql"
     }
   },
   "processes" : {

@@ -27,11 +27,9 @@
     "isTranspiledPipeline" : false,
     "publishDiagnosticMetrics" : false,
     "processesVsModelFiles" : {
-      "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP" : "p2__fixed_value_query",
-      "fixed_value_query_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq" : "p2__fixed_value_query",
-      "P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r" : "p2__fixed_value_query",
-      "SQLStatement_1_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq" : "p2__SQLStatement_1",
-      "constant_selection_2wJIYWCZsfAMeblhr6ODU$$JTxac-Kd-L3diz03CecBz" : "p2__constant_selection"
+      "7yQW7WyaJvjTeaYklA2RK$$IIKOxLfnDjVsAwJA_XnSP" : "models/p2/p2__fixed_value_query.sql",
+      "fixed_value_query_J_p8PBA7xjYn1piqjIXov$$M2TUuJ5dQWNKS_JsFxJxq" : "models/p2/p2__fixed_value_query.sql",
+      "P3e6Q4u1QJBeYEB81xKNa$$Mr8N_0PJfna5SOv0eZ_1r" : "models/p2/p2__fixed_value_query.sql"
     }
   },
   "processes" : {
