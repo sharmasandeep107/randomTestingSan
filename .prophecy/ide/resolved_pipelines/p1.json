@@ -1,0 +1,113 @@
+{
+  "id" : "p1",
+  "metainfo" : {
+    "label" : "p1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "Hrq7aOvu74LYKiCptepfZ$$Ys5a4Ders6meoneWzoLDM" : "models/p1/p1__reformat_1.sql",
+      "lDStHsVV_4-uM-PeeHPgt$$m2OR4tz5BKGfOjxC8zQ8V" : "models/p1/p1__reformat_1.sql"
+    }
+  },
+  "processes" : {
+    "Hrq7aOvu74LYKiCptepfZ$$Ys5a4Ders6meoneWzoLDM" : {
+      "id" : "Hrq7aOvu74LYKiCptepfZ$$Ys5a4Ders6meoneWzoLDM",
+      "component" : "OrchestrationSource",
+      "kind" : "SFTPSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_0",
+        "x" : -140,
+        "y" : -140,
+        "phase" : 0
+      },
+      "properties" : {
+        "format" : {
+          "properties" : {
+            "multiDoc" : false
+          },
+          "kind" : "json",
+          "category" : "file"
+        },
+        "compression" : {
+          "kind" : "uncompressed"
+        },
+        "properties" : {
+          "fileOperationProperties" : {
+            "fileLoadingType" : "filepath",
+            "includeFileNameColumn" : true
+          },
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "random"
+                }
+              } ]
+            }
+          }
+        },
+        "isNew" : false,
+        "connector" : {
+          "kind" : "sftp",
+          "properties" : {
+            "id" : "sftp_1"
+          },
+          "type" : "connector"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "Lf4-EnU0hRMXRFVttQ0Tr$$y82NORG4Ku3TRatjDtwtt",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "lDStHsVV_4-uM-PeeHPgt$$m2OR4tz5BKGfOjxC8zQ8V" : {
+      "id" : "lDStHsVV_4-uM-PeeHPgt$$m2OR4tz5BKGfOjxC8zQ8V",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "p1__reformat_1",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "p1__reformat_1"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "lDStHsVV_4-uM-PeeHPgt$$m2OR4tz5BKGfOjxC8zQ8V", "Hrq7aOvu74LYKiCptepfZ$$Ys5a4Ders6meoneWzoLDM" ],
+        "type" : "table",
+        "isTemporaryTable" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "p1__reformat_1_in_0",
+          "slug" : "in_0"
+        } ],
+        "outputs" : [ {
+          "id" : "p1__reformat_1_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "g1Hg306p15mDuO1kccGJm",
+    "source" : "Hrq7aOvu74LYKiCptepfZ$$Ys5a4Ders6meoneWzoLDM",
+    "sourcePort" : "Lf4-EnU0hRMXRFVttQ0Tr$$y82NORG4Ku3TRatjDtwtt",
+    "target" : "lDStHsVV_4-uM-PeeHPgt$$m2OR4tz5BKGfOjxC8zQ8V",
+    "targetPort" : "p1__reformat_1_in_0"
+  } ],
+  "component" : "Pipeline"
+}
