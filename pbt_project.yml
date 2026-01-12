@@ -77,6 +77,8 @@ sqlOrchestratorPipelines:
     - .prophecy/ide/pipelines/p1.json
     - pipelines/p1.py
     - models/p1/schema.yml
+    - models/p1/p1__Reformat_2.sql
+    - models/p1/p1__Limit_1.sql
     - models/p1/p1__reformat_1.sql
     createdAt: '2026-01-09 11:15:20'
 sqlBusinessApps: {}
