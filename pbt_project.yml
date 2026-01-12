@@ -81,4 +81,13 @@ sqlOrchestratorPipelines:
     - models/p1/p1__Limit_1.sql
     - models/p1/p1__reformat_1.sql
     createdAt: '2026-01-09 11:15:20'
+  .prophecy/metadata/sqlorchestratorpipeline/p2:
+    name: p2
+    schema: null
+    description: null
+    author: sharma.sandeep@prophecy.io
+    files:
+    - .prophecy/ide/pipelines/p2.json
+    - pipelines/p2.py
+    createdAt: '2026-01-12 08:43:38'
 sqlBusinessApps: {}
