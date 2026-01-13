@@ -1,0 +1,12 @@
+---
+version: 2
+models:
+- name: "p1__Limit_1"
+  tags:
+  - "prophecy_temp"
+- name: "p1__Reformat_1"
+  tags:
+  - "prophecy_temp"
+- name: "p1__Reformat_2"
+  tags:
+  - "prophecy_temp"
