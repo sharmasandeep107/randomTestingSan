@@ -1,0 +1,18 @@
+---
+version: 2
+dataTests:
+- name: "testWithColumnTypeParam"
+  arguments:
+  - name: "model"
+    type: "table"
+    description: "{\"ProphecyType\": \"table\"}"
+  - name: "input1"
+    type: "column"
+    description: "{\"ProphecyType\": \"column\"}"
+  - name: "input2"
+    type: "value"
+    description: "{\"ProphecyType\": \"value\"}"
+  - name: "input3"
+    type: "column"
+    description: "{\"ProphecyType\": \"column\"}"
+  type: "generic"
