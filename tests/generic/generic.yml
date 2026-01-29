@@ -1,0 +1,12 @@
+---
+version: 2
+dataTests:
+- name: "newTestDef"
+  arguments:
+  - name: "model"
+    type: "table"
+    description: "{\"ProphecyType\": \"table\"}"
+  - name: "col"
+    type: "column"
+    description: "{\"ProphecyType\": \"column\"}"
+  type: "generic"
