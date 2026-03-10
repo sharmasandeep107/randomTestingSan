@@ -1,0 +1,6 @@
+---
+version: 2
+models:
+- name: "p2__sqlstatement_0"
+  tags:
+  - "prophecy_temp"

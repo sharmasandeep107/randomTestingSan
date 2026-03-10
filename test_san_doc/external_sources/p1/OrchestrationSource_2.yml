@@ -1,0 +1,6 @@
+providerType: "Arrow"
+fields:
+- name: "random"
+  dataType:
+    type: "utf8"
+  nativeType: "String"

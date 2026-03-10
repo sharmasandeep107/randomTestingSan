@@ -1,0 +1,49 @@
+{
+  "id" : "p2",
+  "metainfo" : {
+    "label" : "p2",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "kGP1bVLYMbDBVoUp3S71U$$U1bNXpvCCmidr0rm8y-2e" : "models/p2/p2__sqlstatement_0.sql",
+      "sqlstatement_0_-jc-QRlQWgbqxAG6YTvTu$$EDcbVXk-5rtAnYjDfnfls" : "models/p2/p2__sqlstatement_0.sql"
+    }
+  },
+  "processes" : {
+    "kGP1bVLYMbDBVoUp3S71U$$U1bNXpvCCmidr0rm8y-2e" : {
+      "id" : "kGP1bVLYMbDBVoUp3S71U$$U1bNXpvCCmidr0rm8y-2e",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "p2__sqlstatement_0",
+        "phase" : 0
+      },
+      "properties" : {
+        "modelName" : "p2__sqlstatement_0"
+      },
+      "visualMetaInfo" : {
+        "visualProcessIds" : [ "sqlstatement_0_-jc-QRlQWgbqxAG6YTvTu$$EDcbVXk-5rtAnYjDfnfls", "kGP1bVLYMbDBVoUp3S71U$$U1bNXpvCCmidr0rm8y-2e" ],
+        "type" : "ephemeral",
+        "isTemporaryTable" : true,
+        "lastNodeProcessIds" : [ "sqlstatement_0_-jc-QRlQWgbqxAG6YTvTu$$EDcbVXk-5rtAnYjDfnfls" ]
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "p2__sqlstatement_0_out_0",
+          "slug" : "out_0"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Pipeline"
+}

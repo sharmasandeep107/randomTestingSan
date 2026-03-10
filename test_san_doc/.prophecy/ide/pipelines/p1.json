@@ -1,0 +1,170 @@
+{
+  "id" : "p1",
+  "metainfo" : {
+    "label" : "p1",
+    "autoLayout" : false,
+    "version" : 1,
+    "configuration" : {
+      "schema" : {
+        "type" : "record",
+        "fields" : [ ]
+      }
+    },
+    "isTranspiledPipeline" : false,
+    "publishDiagnosticMetrics" : false,
+    "processesVsModelFiles" : {
+      "yEoQ0bWAn2mwYvL_fxZBN$$QGgG14c3YxLJlpN7A5CSs" : "models/p1/p1__Table_0.sql",
+      "OrchestrationSource_2_tE6c7DJcULafcWJPQL1YS$$P8lM_cKx_E5a9ixqDSsUa" : "models/p1/p1__Table_0.sql",
+      "RoEiSLNVuvAoYptf5yi9D$$Zz-RFnzVwOHx6xzmu9P1K" : "models/p1/p1__Table_0.sql"
+    }
+  },
+  "processes" : {
+    "RoEiSLNVuvAoYptf5yi9D$$Zz-RFnzVwOHx6xzmu9P1K" : {
+      "id" : "RoEiSLNVuvAoYptf5yi9D$$Zz-RFnzVwOHx6xzmu9P1K",
+      "component" : "Dataset",
+      "metadata" : {
+        "label" : "Table_0",
+        "x" : -60,
+        "y" : -260,
+        "phase" : 0
+      },
+      "properties" : {
+        "table" : {
+          "name" : "media_customer_reviews",
+          "sourceType" : "Table",
+          "sourceName" : "samples_bakehouse",
+          "alias" : ""
+        },
+        "writeOptions" : {
+          "writeMode" : "overwrite"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "PklDGQCVplugjMpG29U_N$$gjOfrYuQkZbaUKwH1vO00",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "JoUIarJZmjcViS55MQGb5$$db0blMuIDf3liYqImHPEU",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "yEoQ0bWAn2mwYvL_fxZBN$$QGgG14c3YxLJlpN7A5CSs" : {
+      "id" : "yEoQ0bWAn2mwYvL_fxZBN$$QGgG14c3YxLJlpN7A5CSs",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "sqlstatement_1",
+        "x" : -280,
+        "y" : -280,
+        "phase" : 0
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out",
+          "id" : "out",
+          "language" : "sql",
+          "content" : "select 1 as f1"
+        } ]
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "BQwgoJIrQGN5gPJmDuF1b$$CcdX-aPVRABp4GXbETIPA",
+          "slug" : "OrchestrationSource_2"
+        } ],
+        "outputs" : [ {
+          "id" : "6LC1cfuxYDlSSMFm0OEdc$$xNIsDui8JIYJr39p4oH9i",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    },
+    "1Dcx_ltRavShi36VaIrOc$$hudLGMLHL4O9hTv1jEREM" : {
+      "id" : "1Dcx_ltRavShi36VaIrOc$$hudLGMLHL4O9hTv1jEREM",
+      "component" : "OrchestrationSource",
+      "kind" : "DatabricksVolumeSource",
+      "metadata" : {
+        "label" : "OrchestrationSource_2",
+        "x" : -520,
+        "y" : -360,
+        "phase" : 0
+      },
+      "properties" : {
+        "format" : {
+          "properties" : {
+            "allowLazyQuotes" : false,
+            "allowEmptyColumnNames" : true,
+            "separator" : ",",
+            "nullValue" : "",
+            "enableSchemaMerging" : false,
+            "encoding" : "UTF-8",
+            "schema" : {
+              "providerType" : "Arrow",
+              "fields" : [ {
+                "name" : "random",
+                "dataType" : {
+                  "type" : "utf8"
+                },
+                "nativeType" : "String"
+              } ]
+            },
+            "header" : true
+          },
+          "kind" : "csv",
+          "category" : "file"
+        },
+        "compression" : {
+          "kind" : "uncompressed"
+        },
+        "properties" : {
+          "fileOperationProperties" : {
+            "fileLoadingType" : "filepath",
+            "includeFileNameColumn" : true
+          },
+          "filePath" : {
+            "type" : "concat_operation",
+            "properties" : {
+              "elements" : [ {
+                "type" : "literal",
+                "properties" : {
+                  "value" : "abc.csv"
+                }
+              } ]
+            }
+          }
+        },
+        "isNew" : false,
+        "connector" : {
+          "kind" : "databricks",
+          "properties" : {
+            "id" : "databricks_1"
+          },
+          "type" : "connector"
+        }
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "tE6c7DJcULafcWJPQL1YS$$P8lM_cKx_E5a9ixqDSsUa",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "jSKCmFNIivYKlaFg_LkH4",
+    "source" : "yEoQ0bWAn2mwYvL_fxZBN$$QGgG14c3YxLJlpN7A5CSs",
+    "sourcePort" : "6LC1cfuxYDlSSMFm0OEdc$$xNIsDui8JIYJr39p4oH9i",
+    "target" : "RoEiSLNVuvAoYptf5yi9D$$Zz-RFnzVwOHx6xzmu9P1K",
+    "targetPort" : "PklDGQCVplugjMpG29U_N$$gjOfrYuQkZbaUKwH1vO00"
+  }, {
+    "id" : "WVdLlla9tWhjXKmTbO2XO",
+    "source" : "1Dcx_ltRavShi36VaIrOc$$hudLGMLHL4O9hTv1jEREM",
+    "sourcePort" : "tE6c7DJcULafcWJPQL1YS$$P8lM_cKx_E5a9ixqDSsUa",
+    "target" : "yEoQ0bWAn2mwYvL_fxZBN$$QGgG14c3YxLJlpN7A5CSs",
+    "targetPort" : "BQwgoJIrQGN5gPJmDuF1b$$CcdX-aPVRABp4GXbETIPA"
+  } ],
+  "component" : "Pipeline"
+}

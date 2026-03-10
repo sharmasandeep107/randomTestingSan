@@ -1,0 +1,16 @@
+---
+version: 2
+sources:
+- name: "samples_bakehouse"
+  database: "samples"
+  schema: "bakehouse"
+  tables:
+  - name: "media_customer_reviews"
+    config:
+      tags:
+      - "pipeline:p1"
+    columns:
+    - name: "f1"
+      dataType:
+        type: "Integer"
+    type: "table"
