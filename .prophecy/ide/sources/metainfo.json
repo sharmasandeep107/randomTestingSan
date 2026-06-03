@@ -1,0 +1,144 @@
+{
+  "name" : "test_unpivot_git_before",
+  "fileSystem" : {
+    "type" : "Folder",
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "providerType" : "databricks",
+  "prophecyIDEFolder" : {
+    "name" : "",
+    "children" : { },
+    "path" : "",
+    "editable" : true
+  },
+  "externalSources" : {
+    "type" : "Project",
+    "name" : "",
+    "children" : [ {
+      "type" : "Catalog",
+      "name" : "a_test_catalog",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "abhinav_demos",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "anderson",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "callum",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "community_demo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "damian",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "dbx_sp_workspace_catalog",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "development_workspace",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "eyp_workshop",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "harmonization_prototype",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "hive_metastore",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "ide_test_ci_cd",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "jpmc_cib_trial",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "jpmc_demo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "mockecy",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "pipelinehubdemo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa-team",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "qa_catalog",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "sample_data",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "samples",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "scsk",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "se_demo",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "shell",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "std_testing",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "system",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "tanmay",
+      "children" : [ ]
+    }, {
+      "type" : "Catalog",
+      "name" : "transpiler_testing",
+      "children" : [ ]
+    } ]
+  },
+  "dependenciesContainer" : {
+    "dependencies" : { },
+    "prophecyProjectDependencies" : {
+      "https://github.com/prophecy-io/prophecy-basics" : "33"
+    },
+    "dependenciesMetadata" : {
+      "https://github.com/prophecy-io/prophecy-basics" : {
+        "autoUpgrade" : true
+      }
+    }
+  },
+  "entitiesToSync" : [ ],
+  "frontEndLanguage" : "sql",
+  "backEndLanguage" : "sql"
+}
